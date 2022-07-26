@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    color: blue;
+    padding: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.theme{
+    color: cadetblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-img-top {
+    height: 100px;
+    width: 100px;
+}
+.gauge{
+    padding: 25pxpx;
+    background-color: white;
+    
+    margin: auto;
+    position: relative;
+    
+}
+.donation_table{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.tableimage{
+    display: block;
+    margin: auto;
+}
+form{
+    display: block;
+   margin: auto;
+}
+.tableHeading{
+    display: inline-block;
+    margin-left: 550px;
+}
+.container-fluid{
+    display: flex;
+}
+header{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50rem;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.sc-gauge  { width:200px; height:200px; margin:0px auto; }
+.sc-background { position:relative; height:100px; margin-bottom:10px; background-color:#fff; border-radius:150px 150px 0 0; overflow:hidden; text-align:center; }
+.sc-mask { position:absolute; top:20px; right:20px; left:20px; height:80px; background-color:#555888; border-radius:150px 150px 0 0 }
+.sc-percentage { position:absolute; top:100px; left:-200%; width:400%; height:400%; margin-left:100px; background-color:#00aeef; }
+.sc-percentage { transform:rotate(158deg); transform-origin:top center; }
+.sc-min { float:left; }
+.sc-max { float:right; }
+.sc-value { position:absolute; top:50%; left:0; width:100%;  font-size:48px; font-weight:700 }
+
+b{
+    font-size: 28px;
+}

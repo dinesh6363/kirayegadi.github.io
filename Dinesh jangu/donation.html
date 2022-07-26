@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top bg-light">
+    <div class="container-fluid clearfix">
+      <a class="navbar-brand pull-left" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTWkMEynL12t6slukHh83oZiEQlwjRPNsRA&usqp=CAU"
+          alt="" width="80" height="80" class="d-inline-block align-text-top">
+
+
+      </a>
+      <div class="head text-end text-primary"
+        style="margin-left: 900px; font-size: 24px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Donation Box</div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="row" style="height: 70vh;">
+        <div class="col overflow-scroll border-bottom-0" style="
+                max-height: 250px;
+                overflow-y: auto;
+            ">
+          <div class="card mb-3 " style="max-width: 540px;border: 2px solid grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,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 "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Dinesh</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;border: 2px solid grey; ">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,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 "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Ranveer</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;border: 2px solid grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAADsCAMAAADU6xPUAAAAYFBMVEXy8vK7v8LZ3eC4vL/19fW5vL709PXx8fG8wMPr7vDz9fTu7u7AxMfo6Oi3u7/p7O7Fyczi4uLZ2trQ0dHS19q/w8LY3NvT1NTKy8vCx8ri5ObL0NPp6ejO0tHf5OfHx8gq14vsAAAHTElEQVR4nO2d25qiOhBGwRwAOQiIrUL3+P5vuUG7VTRgElJW4s66mpkLPv8JVOqUShB4PB6Px+PxeDwej8fj8Xg8Ho/H4/F4PB6Px+P5/0DXdM05X68pxf4pRqA0Sr+rev/z0/X87OvqOw2c1kZp0q66LCSsJxxgjDASH7vVZr3G/nV60Kg6xISEAvp/3f1UgXMrRoN/pVjRVVkRdt/YP1MJnta7WUm/wtjJnQWjURNLaDpTHL+c+MA4r6U1DbCstX+5aJupaDq/iIfUcl1RxxQ1DbLCFcf+4TPwXMZIiHSV9i7X+ktP0yArtvXrin403r4rrLZSVlIWC0T1y7W3UFaibPueVmtrnax0sajBxGOreCDJFmvqYR22jhHRcflKnWXZ9BLy0oyo3i+0xxLSvSlR/WpVlsiilTlRYRin2HoubJZsvs9kVviE1Ij5u0EaC95B3phdql6WBYF/blhTzwlbUxAczKsiK+x3sDL9/g1g20HTpuIC+8FN0Rjdqu5kRZii6AlEFHKs1UJ8VQM7xC+LdkCiQvaFt1gplKgwPKKJojWMrRggOZYqfgQThWgvNnBLhee6Q76A/WJtkFSVgKLwnEGozepCiaMqh1UVoqiiNawqnOARzrH4VVVhqILcrc6qUHasCCS0uuOAoSqNgVWdMELHHHIPHth9pKosQVDVQquKMVRVywqmtqqCXqsQw7/9UFXQb+BnqkL5rsAt+2eqQonxN9AeE4pvAe/dYqj6zEjkQ6PGBtZcIGVvgbMxBEVUEH1k5gyqJHcBq+3CZPvSM6xFEQVcPdghiQqCHaAqtE7B9aKm6HlwdqszgA5uhtibAFbrIQ1ePx1dQS0Ww+z54UDRCEHJRv9Ba5gwH6t8+gfIYpEDbpcqzJfF0Ls5AZxBC87BAOxZKMmlMeYdDGJDo/7asMFgqFb9SmvWuu9Q+zivmO38IdYccDR2pGdo9LHiQMVAZCzQKmw6gGWqqZOU1qxUDzWTRSNHOyzFH9TEcRGCUrWfw8Bq2bZSZ741z+BfRdl2rvZCuuggKrHrVO0dW31ZxJ7Dp4/Qla6mbGOTSX+A5lpuBtlaaCfu4LxmyhNWHJgcQ9NOSRYJG+yfLAXPD9J7Fwn3qcVf1Aiad/ODs34p4iax/uW7g6b1xIyz2zKxUxW5pGmA8n9NFk68ir3gY7Nxc+AeDfL6kPUS7leNFCQ+bqvUTUkX+t+etKumK0/ZQHnYNu0m4Q4rukIHRn9wAZokiRHz3C9swu0w9DTfZnFWmkhN1qc4Pu4tGA42eH5nW0AW51F+JzqRsEPexGh7utrupfN5outEJ0K2iOv14KEva6cajX4jpEHSRZPtwx67qKX0YfoMCWsUu1GHjx7Rktaj56ao4v0BCm8zgTNUVLpNpcKeKPbu0ZYTHY87zdLnxEgnEr+xlEU3kwPoMs0HTjwuJN3bEp8zh0+JznwePpOmJ+F7lis9zFXhdHKV853x5A0ZAJ7H8+E7Oynmi/onzj6w/4+CzkBJ9FeQk5Llou2rB/ZGIwd9C6W6vRlr5fdPLtWGovJEdQ5ySTHpT4HOf6R3T4SboBBJJ2ZJJvXO8NWTfzL9HwW0WqlKKUfCL6C5ytxVoJqJ8lnu7ntGFw0qxZQ8SM14o1ynJ+xQBULHm9Kk3inXJgH66/RO3fdxbfVw0Ub/l++6lP6eRk8rDYtKtJuVGMu6us03ycCmXTWHmOmWkA2/hOmyc3GkIEUYx/FDwlPjQZ1JAw98LE4e0plbrRP4MW5pjB31oWplNmCYmas6OOiILHWYCVeXrsDP26uy/FwCnwy+8Vh+Mgb8rLMGi5PfVDL2eC8L4xLoqV+6kHzJtgUwJNoMizoJLfyoLixwnezafsdo3yRgdvK/cTTNu7l+bgg0j9PRBT2M74D905EFPaByMTouBrfW/v2hcfgMdpitGZhyITq1/f0bOCouFte59e7tEMV55+AjpMygdgKNAtynAYFaFgPkPg0QFOJimPs0IFAolaztdgBHFNIhydpqB3CM/FYMdp8GCLKLBTpN3jSyX5Y7BvBMLLVnubJX/SF3bSDo7CgIZGZC2h4sPiMzOwx40hwEr6fXwQ0jguP1DQnQ0zYheL0TOxKCjHmVwXDPVgyQF/bC7hzgJC/y0265gDdmwyzoGbZQsPlpg9bVgCWZbZpxKFwcU8xYQbrF/nW6zA68dNMCDsxUSMCvCIFjOsqiwPOuIZnJuTsV2o+ZDvQBr8qEZ9K2O2vXz0y4F9Bj5GGZsu0uhlY3poKsxFV36cLEESknA8YbTGguXKgEz1EIJ/+6lt18pFgJVTlTtBIjrjs6mAgcI0wLWt8L8xKBqrVjpRABAu+CfrmuSjSzwdVEzA2Rz0Sd9pcGhCMIHTfsofAKEvAraOERXG5m4ckJVQRFR8d92wFBk7vbgfAZwQz+D1AluGLU8Thk4PkWEtejq4HnCAv24rH38Fxy/FBVThaEx4hVEVIQdxGqquOyWblMdwyvqv4DeqKLPNr0GhIAAAAASUVORK5CYII= "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Harish</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;border: 2px solid grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,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 "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Ramesh</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;border: 2px solid grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,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 "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Suresh</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;border: 2px solid grey;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="data:image/png;base64,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 "
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Raj</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="sc-gauge" style="width:200px; height:200px; margin:200px auto">
+            <div class="sc-background"
+              style=" position:relative; height:100px; margin-bottom:10px; margin-top: -110px; background-color:#fff; border-radius:150px 150px 0 0; overflow:hidden; text-align:center;">
+              <div class="sc-percentage"
+                style="position:absolute; top:100px; left:-200%; width:400%; height:400%; margin-left:100px; background-color:#00aeef;transform:rotate(90deg); transform-origin:top center;">
+              </div>
+              <div class="sc-mask"
+                style=" position:absolute; top:20px; right:20px; left:20px; height:80px; background-color: azure; border-radius:150px 150px 0 0">
+              </div>
+              <span class="sc-value"
+                style=" position:absolute; top:38%; left:0; width:100%;  font-size:48px; font-weight:700">50</span>
+            </div>
+            <span class="sc-min" style="float:left;">0</span>
+            <span class="sc-max" style="float:right;">100</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="container-fluid" style="height: 50vh;  margin-top: -100px;">
+      <!-- <caption><b class="text-right" style="margin-left: 500px; font-size: 24px;">Donor Names</b>
+      </caption> -->
+      <h2 class="mx-auto d-flex justify-content-center" style="display: block;">Donor Names</h2>
+      <div class="container" style="height: 50vh;">
+        <div class="row" style="height: 100%;">
+          <div class="col-sm">
+            <div class="row donation_table">
+
+              <div class="col-2">
+                <!-- Button trigger modal -->
+                <a href="http://127.0.0.1:5500/dannyform.html" target="_blank"><button type="button"
+                    class="btn btn-primary">Donate Now</button></a>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="makeTable col-8" style="">
+                <table class="table caption-top">
+
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Donation</th>
+                      <th scope="col">Donation Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Bob Smith</td>
+                      <td>$1000</td>
+                      <td>1/1/2016</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jana Doe</td>
+                      <td>$20000</td>
+                      <td>1/5/2016</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Sarah Joe</td>
+                      <td>$500</td>
+                      <td>1/21/2016</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Jacob</td>
+                      <td>$15000</td>
+                      <td>1/16/2016</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Larry</td>
+                      <td>$1000</td>
+                      <td>1/21/2016</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-2">
+                <!-- Button trigger modal -->
+                <a href="http://127.0.0.1:5500/dannyform.html" target="_blank"><button type="button"
+                    class="btn btn-primary">Donate Now</button></a>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    background-color: aqua;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    
+    /* margin: 150px; */
+    /* width: 50vw;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-block; */
+    main{
+		padding:0%;
+		margin: 5%;
+		display: block;
+		min-height: 100vh
+		min-width: 100vh;
+	}
+	.comment-section{
+		max-height: 25vh;
+		max-width: 90%;
+		background-color: #3f3f3f;
+		overflow-y:scroll;
+	}
+	.comment{
+		height: 10%;
+		padding: 2%;
+		margin: 2%;
+		background-color: #ffff;
+		color: black;
+	}
+}
+.box2{
+    background-color: blueviolet;
+    /* margin: 150px; */
+    width: 49vw;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-block;
+}
+.container2{
+    background-color: brown;
+    height: 200px;
+}
